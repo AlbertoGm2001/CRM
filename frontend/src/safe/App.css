@@ -1,0 +1,310 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;/*Parecido a padding*/
+  padding: 0 px;/*Especifica el espacio que se deja vacío en la parte superior de la ventana*/
+}
+
+.App {
+  max-width: 100%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f4f4f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+th {
+  cursor: pointer;
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+th:hover {
+  background-color: #ddd;}
+
+
+.filterForm {
+
+  
+  top:0;
+  left: 200px;
+  width: 80%;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size:22px;
+  font-weight: bolder;
+  color: #f0f0f0;
+  padding: 25px;
+  border-radius: 30px; 
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px); 
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+
+/* Estilos de los dropdowns de filtros */
+.custom-select__control {
+  background-color: transparent !important;
+  color: white !important;
+  border: 1px solid white !important;
+  font-size: 18px !important;
+}
+
+ .custom-select__placeholder {
+  color: white !important;
+}
+
+.custom-select__option {
+  color: black !important;
+  background-color: white !important;
+}
+
+/* Hover style */
+.custom-select__option--is-focused {
+  background-color: #f0f0f0 !important;
+}
+ 
+ 
+
+
+
+
+.create-button {
+  align-self: center;
+  background-color: #28a745;
+}
+.close-button {
+    align-self: center;
+    background-color: rgba(200, 20, 0, 1);
+  }
+ 
+
+ 
+
+
+.ordersList {
+    
+    width: 100%;
+    height:80%;
+    border-collapse: collapse; /* Keep collapse for consistent spacing */
+    margin-top: 100px;
+    font-family: Arial, sans-serif; /* Clean font for readability */
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for a floating look */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensures content respects rounded corners */
+  }
+  
+  .ordersList th, .ordersList td {
+    padding: 15px; /* Slightly more padding for better spacing */
+    border: none; /* Remove visible borders */
+    text-align: left;
+    color: #333; /* Darker text color for readability */
+  }
+  
+  .ordersList th {
+    background-color: #007bff; /* CRM-like bold header background */
+    color: white; /* White text for contrast */
+    font-weight: bold; /* Highlight the header */
+    text-transform: uppercase; /* Add a professional touch */
+  }
+  
+  .ordersList tr:nth-child(even) {
+    background-color: #f8f9fa; /* Light gray for alternate rows */
+  }
+  
+  .ordersList tr:hover {
+    background-color: #e9ecef; /* Subtle highlight on hover */
+  }
+  
+
+.error-message {
+    color: red;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  .modal-content {
+    position: fixed;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center alignment */
+    background-color: white; /* Modal background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); /* Subtle shadow */
+    padding: 20px; /* Inner spacing */
+    width: 90%; /* Adjust modal size for smaller screens */
+    max-width: 400px; /* Maximum width for the modal */
+    text-align: center; /* Center the content */
+    z-index: 1000; /* Ensure the modal appears above other content */
+  }
+
+ 
+  
+  /* Modal text */
+  .modal-content p {
+    font-size: 1rem;
+    color: #333; /* Neutral text color */
+    margin-bottom: 20px; /* Space between the text and buttons */
+  }
+
+
+
+Form {
+
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    
+    margin: 0;
+    padding: 20px;
+    background-color: rgba(64, 128, 255, 0.8);
+    border-radius: 30px; 
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+
+    backdrop-filter: blur(5px); 
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+
+
+
+select {
+    width: 200px;
+    height: 40px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 2px solid #007BFF; /* Blue border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background */
+    color: #333; /* Text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    outline: none; /* Remove default focus outline */
+    appearance: none; /* Removes default arrow for custom styling */
+  }
+  
+  /* Add a custom arrow */
+  select {
+    background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"%3E%3Cpath fill="%23333" d="M10 15l-5-5h10l-5 5z"%3E%3C/path%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+  }
+  
+
+  /*Menú de opciones:*/
+/* Wrapper for the menu */
+.action-menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;}
+
+/* Button for the options (...) */
+.menu-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color:black;
+  cursor: pointer;/*How does the cursor change when you hovering the button*/
+}
+ .menu-button:hover {
+  color: #007bff; /* Keep the existing hover color, like blue or your preferred color */
+}
+
+/* Dropdown menu styling */
+.simple-menu {
+  /*position: absolute;
+  top: 100%;
+  right: 0;*/
+  display: flex;
+  flex-direction: column; /* Stack options vertically */
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ddd;
+  font-weight: 900;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  background-color: white; /* Optional if you need contrast */
+ }
+
+/* Individual buttons in the menu */
+.simple-menu button {
+  all: unset; /* Removes default button styles */
+  font-size: 0.9rem; /* Smaller font size */
+  padding: 8px 12px; /* Add some spacing */
+  cursor: pointer;
+}
+
+/* Hover effect for buttons */
+.simple-menu button:hover {
+  background-color: #f0f0f0; /* Subtle hover effect */
+}
+
+
+/* Flexbox container for dropdowns */
+.container {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Space between dropdowns */
+}
+
+/* Special class for filter dropdowns */
+.filter {
+  width: 250px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #007bff;
+  background-color: white;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover & Focus Effects */
+.filter:hover,
+.filter:focus {
+  border-color: #0056b3;
+  box-shadow: 0 6px 10px rgba(0, 123, 255, 0.2);
+}
+
+/* Multi-select Appearance */
+.filter[multiple] {
+  height: 120px;
+  overflow-y: auto;
+}
+
+/* Selected Option Styling */
+.filter option:checked {
+  background-color: #007bff;
+  color: white;
+}
