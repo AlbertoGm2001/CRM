@@ -1,0 +1,126 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;/*Parecido a padding*/
+  padding: 0 px;/*Especifica el espacio que se deja vacío en la parte superior de la ventana*/
+}
+
+.App {
+  max-width: 100%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+form button {
+  align-self: center;
+  background-color: #28a745;
+}
+
+form button:hover {
+  background-color: #218838;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse; 
+  margin-top: 20px;
+}
+
+table th, table td {
+
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table th {
+  background-color: #f8f9fa;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+.UpdateForm {
+  margin-top: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+Form {/*This applies to every form object*/
+
+    display: inline-flex;/*Crea como un contenedor para todo el objeto*/	
+    flex-direction: column;/*Los elementos del objeto se muestran en dirección vertical*/
+    align-items: center;
+    margin-top: 50px;
+    padding: 40px;/*Tamaño del contenedor del formulario*/
+    background-color: #add8e6;
+    border-radius: 100px;/*Da una forma más circular al formulario*/
+}
+
+
+
+select {
+    width: 200px;
+    height: 40px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 2px solid #007BFF; /* Blue border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background */
+    color: #333; /* Text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    outline: none; /* Remove default focus outline */
+    appearance: none; /* Removes default arrow for custom styling */
+  }
+  
+  /* Add a custom arrow */
+  select {
+    background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"%3E%3Cpath fill="%23333" d="M10 15l-5-5h10l-5 5z"%3E%3C/path%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+  }
+  
+ 
+  
+ 

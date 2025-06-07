@@ -1,0 +1,9 @@
+Instance: Contiene el archivo de la base de datos de SQLite
+
+venv: Entorno virtual de Pip con las librerías necesarias
+
+config: Archivo en que se genera la API de Flask y la conexión a la BBDD de SQLite
+
+main: Archivo en que se definen las distintas peticiones que se pueden realizar a la API
+
+models: Archivo en que se definen las clases de objetos con los que se va a poder trabajar. Pedidos,Productos,...

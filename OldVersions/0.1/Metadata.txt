@@ -1,0 +1,3 @@
+Esta versión 0.1 tiene únicamente una pantalla en que se muestran Pedidos.
+
+Permite únicamente ver los pedidos disponibles, crear, eliminar y actualizar pedidos.

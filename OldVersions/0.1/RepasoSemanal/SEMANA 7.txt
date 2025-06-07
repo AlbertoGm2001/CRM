@@ -1,0 +1,10 @@
+SEMANA 7(17-02/23-02)
+
+1. Que al hacer Reset, se resetee tb el formulario, no solo los pedidos
+2. Saltan errores al filtrar por Status cuando no debería. Además el mensaje de error no se va. 
+3. Meter que si se pulsa en el nombre de una columna, se ordenen los datos por esa columna
+4. El botón de Filtrar funcionaba para todo menos para Productos. 
+5. Que al filtrar por un campo, si un pedido tiene ese campo como nulo, que no aparezca
+6. Ordenar estructura de carpetas
+7. Al hacer el reset los pedidos con date nula no aparecen(Se ha incluido una condición para diferenciar si se está filtrando por fecha o no y en función de eso, se muestran los nulos o no)
+8. Optimizar todo el código hecho hasta ahora(Esto se ha quedado como por la mitad)
